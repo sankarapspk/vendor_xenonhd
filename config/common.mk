@@ -69,6 +69,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/xenonhd/config/permissions/xenonhd-sysconfig.xml:system/etc/sysconfig/xenonhd-sysconfig.xml
 
+
+# CAF
+# Telephony packages
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/xenonhd/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
